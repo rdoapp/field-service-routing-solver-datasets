@@ -1,0 +1,27 @@
+# PENDING THE OWNER: authors, DOI (add "doi:" and an "identifiers" entry once deposited), and
+# "repository-code:" if the generator's source is published later (it is not published at this time).
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "HVAC field-service planning days"
+version: "1.1.0"
+date-released: 2026-11-10
+license: ODbL-1.0
+abstract: >-
+  Synthetic one-day planning problems of an HVAC field-service company in
+  Budapest and Pécs (Hungary): technicians and two-person teams with shifts,
+  breaks and skills, a queue of jobs far larger than a day's capacity with
+  time windows and priorities, and OpenStreetMap road travel
+  matrices; a lexicographic objective, upper bounds, best known solutions,
+  a validator and a scorer.
+authors:
+  - name: "PENDING: creator to be named by the owner"
+keywords:
+  - vehicle routing
+  - field service
+  - team orienteering
+  - time windows
+  - skills
+  - synthetic data
+  - benchmark
+  - OpenStreetMap

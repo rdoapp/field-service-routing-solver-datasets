@@ -1,0 +1,9 @@
+{
+  "format": "hvac-field-service-solution",
+  "format_version": "1.0",
+  "instance": "budapest-t05-servable-s4",
+  "solution": "illustrative-example",
+  "routes": [
+    {"team": "team01", "stops": [{"job": "j0001", "start": 486}, {"job": "j0002", "start": 575}, {"job": "j0003", "start": 638}]}
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "format": "hvac-field-service-problem",
+  "format_version": "1.0",
+  "dataset_major_version": 1,
+  "instance": "pecs-t10-servable-s4",
+  "description": "Synthetic HVAC field-service planning day in Pécs: 10 technicians in 9 teams, 64 jobs waiting, all of which one known plan serves.",
+  "region": {
+    "name": "Pécs",
+    "country": "HU"
+  },
+  "kind": "servable",
+  "date": "2026-06-16",
+  "timezone": "Europe/Budapest",
+  "time_unit": "minutes after local midnight of date",
+  "matrices": {
+    "n": 74,
+    "durations": "durations_s.csv.gz",
+    "distances": "distances_m.csv.gz",
+    "sha256": {
+      "durations": "7a0227695618ada48c73478781e1adbec960b388f4fa2a7676e7085a36ccf087",
+      "distances": "433136a0d04bd77df05ee8e59c18996c0035bd088c5107f2cba0232fdc1abf13"
+    }
+  },
+  "locations": [
+    {"index": 0, "lat": 45.869062, "lon": 18.448053},
+    {"index": 1, "lat": 46.097219, "lon": 18.204803},
+    {"index": 2, "lat": 46.060832, "lon": 18.200338},
+    {"index": 3, "lat": 46.089846, "lon": 18.25603},
+    {"index": 4, "lat": 46.037768, "lon": 18.231603},
+    {"index": 5, "lat": 46.048286, "lon": 18.223517},
+    {"index": 6, "lat": 46.086262, "lon": 18.232268},
+    {"index": 7, "lat": 46.051885, "lon": 18.216036},
+    {"index": 8, "lat": 46.041482, "lon": 18.22635},
+    {"index": 9, "lat": 46.190216, "lon": 18.256413},
+    {"index": 10, "lat": 46.084648, "lon": 18.233592},
+    {"index": 11, "lat": 46.079308, "lon": 18.234959},
+    {"index": 12, "lat": 46.071077, "lon": 18.242552},
+    {"index": 13, "lat": 46.08726, "lon": 18.22051},
+    {"index": 14, "lat": 46.071676, "lon": 18.242968},
+    {"index": 15, "lat": 46.038, "lon": 18.228744},
+    {"index": 16, "lat": 46.033035, "lon": 18.213141},
+    {"index": 17, "lat": 46.049809, "lon": 18.225619},
+    {"index": 18, "lat": 46.037447, "lon": 18.237092},
+    {"index": 19, "lat": 46.070352, "lon": 18.223058},
+    {"index": 20, "lat": 46.068334, "lon": 18.190357},
+    {"index": 21, "lat": 46.049069, "lon": 18.22227},
+    {"index": 22, "lat": 46.037548, "lon": 18.227078},
+    {"index": 23, "lat": 46.059408, "lon": 18.224953},
+    {"index": 24, "lat": 46.067073, "lon": 18.207328},
+    {"index": 25, "lat": 46.065161, "lon": 18.190906},
+    {"index": 26, "lat": 46.070569, "lon": 18.236197},
+    {"index": 27, "lat": 46.079381, "lon": 18.232482},
+    {"index": 28, "lat": 46.040091, "lon": 18.23484},
+    {"index": 29, "lat": 46.035201, "lon": 18.232914},
+    {"index": 30, "lat": 46.076928, "lon": 18.259424},
+    {"index": 31, "lat": 46.073621, "lon": 18.23188},
+    {"index": 32, "lat": 46.085216, "lon": 18.23327},
+    {"index": 33, "lat": 46.069975, "lon": 18.21931},
+    {"index": 34, "lat": 46.080746, "lon": 18.262592},
+    {"index": 35, "lat": 46.040058, "lon": 18.234843},
+    {"index": 36, "lat": 45.849889, "lon": 18.29994},
+    {"index": 37, "lat": 46.037535, "lon": 18.22372},
+    {"index": 38, "lat": 46.071158, "lon": 18.203752},
+    {"index": 39, "lat": 45.861619, "lon": 18.227151},
+    {"index": 40, "lat": 46.054903, "lon": 18.223208},
+    {"index": 41, "lat": 46.036455, "lon": 18.234546},
+    {"index": 42, "lat": 45.860928, "lon": 18.225865},
+    {"index": 43, "lat": 46.052126, "lon": 18.222224},
+    {"index": 44, "lat": 46.048203, "lon": 18.21983},
+    {"index": 45, "lat": 46.028059, "lon": 18.231475},
+    {"index": 46, "lat": 46.071766, "lon": 18.195122},
+    {"index": 47, "lat": 46.079676, "lon": 18.264346},
+    {"index": 48, "lat": 46.083629, "lon": 18.223159},
+    {"index": 49, "lat": 46.038753, "lon": 18.222385},
+    {"index": 50, "lat": 46.047756, "lon": 18.217293},
+    {"index": 51, "lat": 46.051886, "lon": 18.215798},
+    {"index": 52, "lat": 46.078748, "lon": 18.215233},
+    {"index": 53, "lat": 46.054949, "lon": 18.223257},
+    {"index": 54, "lat": 46.048558, "lon": 18.224578},
+    {"index": 55, "lat": 46.079402, "lon": 18.232195},
+    {"index": 56, "lat": 46.080956, "lon": 18.258495},
+    {"index": 57, "lat": 46.072106, "lon": 18.217765},
+    {"index": 58, "lat": 46.07084, "lon": 18.192345},
+    {"index": 59, "lat": 46.087612, "lon": 18.234509},
+    {"index": 60, "lat": 46.048522, "lon": 18.218048},
+    {"index": 61, "lat": 46.071167, "lon": 18.197955},
+    {"index": 62, "lat": 46.042169, "lon": 18.233035},
+    {"index": 63, "lat": 45.856835, "lon": 18.231209},
+    {"index": 64, "lat": 46.045098, "lon": 18.215239},
+    {"index": 65, "lat": 46.045162, "lon": 18.223036},
+    {"index": 66, "lat": 46.07116, "lon": 18.212101},
+    {"index": 67, "lat": 46.08312, "lon": 18.262888},
+    {"index": 68, "lat": 46.041007, "lon": 18.221269},
+    {"index": 69, "lat": 46.046518, "lon": 18.22035},
+    {"index": 70, "lat": 46.068133, "lon": 18.223647},
+    {"index": 71, "lat": 46.074091, "lon": 18.217571},
+    {"index": 72, "lat": 46.069686, "lon": 18.218042},
+    {"index": 73, "lat": 46.043934, "lon": 18.21469}
+  ],
+  "technicians": [
+    {"id": "t01", "start_location": 0, "end_location": 0, "shift": [480, 990], "breaks": [[750, 780]], "skills": ["install", "fgas", "service"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t02", "start_location": 0, "end_location": 0, "shift": [480, 990], "breaks": [[750, 780]], "skills": ["install", "fgas", "service"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t03", "start_location": 1, "end_location": 2, "shift": [480, 990], "breaks": [[720, 750]], "skills": ["service"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t04", "start_location": 0, "end_location": 3, "shift": [480, 990], "breaks": [[720, 750]], "skills": ["service"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t05", "start_location": 1, "end_location": 4, "shift": [480, 990], "breaks": [[720, 750]], "skills": ["service", "fgas"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t06", "start_location": 0, "end_location": 5, "shift": [480, 990], "breaks": [[720, 750]], "skills": ["service"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t07", "start_location": 1, "end_location": 6, "shift": [480, 990], "breaks": [[720, 750]], "skills": ["service"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t08", "start_location": 0, "end_location": 7, "shift": [480, 990], "breaks": [[720, 750]], "skills": ["service", "fgas"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t09", "start_location": 1, "end_location": 8, "shift": [480, 990], "breaks": [[720, 750]], "skills": ["service"], "max_route_duration_min": null, "max_route_distance_m": null},
+    {"id": "t10", "start_location": 0, "end_location": 9, "shift": [480, 990], "breaks": [[720, 750]], "skills": ["service"], "max_route_duration_min": null, "max_route_distance_m": null}
+  ],
+  "teams": [
+    {"id": "team01", "members": ["t01", "t02"]},
+    {"id": "team02", "members": ["t03"]},
+    {"id": "team03", "members": ["t04"]},
+    {"id": "team04", "members": ["t05"]},
+    {"id": "team05", "members": ["t06"]},
+    {"id": "team06", "members": ["t07"]},
+    {"id": "team07", "members": ["t08"]},
+    {"id": "team08", "members": ["t09"]},
+    {"id": "team09", "members": ["t10"]}
+  ],
+  "jobs": [
+    {"id": "j0001", "location": 10, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 50, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 1}},
+    {"id": "j0002", "location": 11, "service_minutes": 60, "windows": [[480, 600]], "priority": 1, "value_eur": 90, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "working", "dwelling": "house", "devices": 1}},
+    {"id": "j0003", "location": 12, "service_minutes": 30, "windows": [[480, 600], [840, 960]], "priority": 1, "value_eur": 45, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 1}},
+    {"id": "j0004", "location": 13, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 55, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 1}},
+    {"id": "j0005", "location": 14, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 40, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 1}},
+    {"id": "j0006", "location": 15, "service_minutes": 30, "windows": [[480, 600]], "priority": 1, "value_eur": 40, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 1}},
+    {"id": "j0007", "location": 16, "service_minutes": 60, "windows": [[840, 960]], "priority": 1, "value_eur": 75, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 2}},
+    {"id": "j0008", "location": 17, "service_minutes": 30, "windows": [[840, 960]], "priority": 1, "value_eur": 35, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 3}},
+    {"id": "j0009", "location": 18, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 45, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 2}},
+    {"id": "j0010", "location": 19, "service_minutes": 60, "windows": [[720, 840]], "priority": 1, "value_eur": 75, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "house", "devices": 1}},
+    {"id": "j0011", "location": 20, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 40, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 2}},
+    {"id": "j0012", "location": 21, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 90, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "house", "devices": 2}},
+    {"id": "j0013", "location": 22, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 80, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0014", "location": 23, "service_minutes": 60, "windows": [[840, 960]], "priority": 3, "value_eur": 95, "skills": [{"skill": "fgas", "count": 1}], "attributes": {"type": "repair", "customer_type": "working", "dwelling": "flat", "devices": 1}},
+    {"id": "j0015", "location": 24, "service_minutes": 120, "windows": [], "priority": 2, "value_eur": 115, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "working", "dwelling": "house", "devices": 2}},
+    {"id": "j0016", "location": 25, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 50, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 1}},
+    {"id": "j0017", "location": 26, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 75, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "house", "devices": 2}},
+    {"id": "j0018", "location": 27, "service_minutes": 60, "windows": [], "priority": 2, "value_eur": 90, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "working", "dwelling": "house", "devices": 2}},
+    {"id": "j0019", "location": 28, "service_minutes": 30, "windows": [[840, 960]], "priority": 1, "value_eur": 40, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 1}},
+    {"id": "j0020", "location": 29, "service_minutes": 120, "windows": [], "priority": 1, "value_eur": 160, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "house", "devices": 2}},
+    {"id": "j0021", "location": 30, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 80, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 2}},
+    {"id": "j0022", "location": 31, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 45, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0023", "location": 32, "service_minutes": 90, "windows": [], "priority": 1, "value_eur": 110, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "house", "devices": 3}},
+    {"id": "j0024", "location": 33, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 40, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 2}},
+    {"id": "j0025", "location": 34, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 55, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "house", "devices": 1}},
+    {"id": "j0026", "location": 35, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 85, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0027", "location": 36, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 45, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "house", "devices": 1}},
+    {"id": "j0028", "location": 37, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 45, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0029", "location": 38, "service_minutes": 60, "windows": [[600, 720]], "priority": 1, "value_eur": 85, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0030", "location": 39, "service_minutes": 60, "windows": [[720, 840]], "priority": 2, "value_eur": 80, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "house", "devices": 2}},
+    {"id": "j0031", "location": 40, "service_minutes": 90, "windows": [], "priority": 1, "value_eur": 160, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 3}},
+    {"id": "j0032", "location": 41, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 110, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 2}},
+    {"id": "j0033", "location": 42, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 55, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "business", "dwelling": "office", "devices": 4}},
+    {"id": "j0034", "location": 43, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 50, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "business", "dwelling": "office", "devices": 3}},
+    {"id": "j0035", "location": 44, "service_minutes": 120, "windows": [], "priority": 2, "value_eur": 190, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "business", "dwelling": "office", "devices": 5}},
+    {"id": "j0036", "location": 45, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 55, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 1}},
+    {"id": "j0037", "location": 46, "service_minutes": 60, "windows": [[480, 960]], "priority": 3, "value_eur": 125, "skills": [{"skill": "fgas", "count": 1}], "attributes": {"type": "repair", "customer_type": "business", "dwelling": "office", "devices": 6}},
+    {"id": "j0038", "location": 47, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 55, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 1}},
+    {"id": "j0039", "location": 48, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 75, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 2}},
+    {"id": "j0040", "location": 49, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 90, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 2}},
+    {"id": "j0041", "location": 50, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 35, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 2}},
+    {"id": "j0042", "location": 51, "service_minutes": 90, "windows": [], "priority": 1, "value_eur": 115, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 3}},
+    {"id": "j0043", "location": 52, "service_minutes": 120, "windows": [], "priority": 1, "value_eur": 165, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "flat", "devices": 2}},
+    {"id": "j0044", "location": 53, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 50, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 1}},
+    {"id": "j0045", "location": 54, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 40, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 2}},
+    {"id": "j0046", "location": 55, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 50, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "house", "devices": 1}},
+    {"id": "j0047", "location": 56, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 80, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "house", "devices": 2}},
+    {"id": "j0048", "location": 57, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 70, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "working", "dwelling": "flat", "devices": 1}},
+    {"id": "j0049", "location": 58, "service_minutes": 60, "windows": [], "priority": 3, "value_eur": 100, "skills": [{"skill": "fgas", "count": 1}], "attributes": {"type": "repair", "customer_type": "working", "dwelling": "house", "devices": 2}},
+    {"id": "j0050", "location": 59, "service_minutes": 120, "windows": [], "priority": 1, "value_eur": 170, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "working", "dwelling": "house", "devices": 2}},
+    {"id": "j0051", "location": 60, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 50, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 3}},
+    {"id": "j0052", "location": 61, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 55, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0053", "location": 62, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 85, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "house", "devices": 2}},
+    {"id": "j0054", "location": 63, "service_minutes": 240, "windows": [], "priority": 2, "value_eur": 365, "skills": [{"skill": "install", "count": 2}, {"skill": "fgas", "count": 1}], "attributes": {"type": "installation", "customer_type": "home", "dwelling": "house", "devices": 2}},
+    {"id": "j0055", "location": 64, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 35, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0056", "location": 65, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 50, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0057", "location": 66, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 45, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 1}},
+    {"id": "j0058", "location": 67, "service_minutes": 180, "windows": [[720, 960]], "priority": 1, "value_eur": 195, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "house", "devices": 3}},
+    {"id": "j0059", "location": 68, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 40, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 2}},
+    {"id": "j0060", "location": 69, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 80, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 2}},
+    {"id": "j0061", "location": 70, "service_minutes": 30, "windows": [], "priority": 2, "value_eur": 50, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "home", "dwelling": "flat", "devices": 1}},
+    {"id": "j0062", "location": 71, "service_minutes": 30, "windows": [], "priority": 1, "value_eur": 55, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "house", "devices": 1}},
+    {"id": "j0063", "location": 72, "service_minutes": 30, "windows": [], "priority": 2, "value_eur": 45, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "cleaning", "customer_type": "working", "dwelling": "flat", "devices": 2}},
+    {"id": "j0064", "location": 73, "service_minutes": 60, "windows": [], "priority": 1, "value_eur": 85, "skills": [{"skill": "service", "count": 1}], "attributes": {"type": "washing", "customer_type": "home", "dwelling": "flat", "devices": 1}}
+  ],
+  "objective": {
+    "tiers": [
+      {
+        "rank": 1,
+        "name": "service_minutes",
+        "sense": "maximize",
+        "unit": "min"
+      },
+      {
+        "rank": 2,
+        "name": "priority3_service_minutes",
+        "sense": "maximize",
+        "unit": "min"
+      },
+      {
+        "rank": 3,
+        "name": "travel_time_s",
+        "sense": "minimize",
+        "unit": "s"
+      }
+    ]
+  },
+  "bounds": {
+    "service_minutes_max": 3570,
+    "priority3_service_minutes_max": 180,
+    "statement": "No feasible solution serves more service minutes than service_minutes_max, nor more service minutes of priority-3 jobs than priority3_service_minutes_max. Both come from a capacity relaxation (a fractional knapsack over each job's service plus its cheapest incoming leg); they are upper limits, usually not attainable."
+  },
+  "provenance": {
+    "generator": {
+      "name": "hvac-bench-generator",
+      "version": "git-8642717998be",
+      "commit": "8642717998becc3991736c40a96c576b3f54a24e",
+      "repository": "generator source: not published"
+    },
+    "instance_spec": {
+      "region": "pecs",
+      "technicians": 10,
+      "kind": "servable",
+      "seed": 4,
+      "date": "2026-06-16",
+      "features": [
+        "time_windows",
+        "multi_windows",
+        "priorities",
+        "value",
+        "skills",
+        "crews",
+        "breaks",
+        "end_locations"
+      ]
+    },
+    "parameters": {
+      "customers": {
+        "adoption": {
+          "core": 1.0,
+          "suburb": 0.8,
+          "village": 0.4
+        },
+        "business_share": {
+          "core": 0.15,
+          "suburb": 0.07,
+          "village": 0.03
+        },
+        "cluster_share": 0.4,
+        "cluster_sigma_m": 300.0,
+        "core_density": 5000.0,
+        "devices": {
+          "flat": [
+            0.6,
+            0.3,
+            0.1
+          ],
+          "house": [
+            0.3,
+            0.4,
+            0.3
+          ]
+        },
+        "flat_share": {
+          "core": 0.85,
+          "suburb": 0.35,
+          "village": 0.05
+        },
+        "maintenance_job_share": 0.85,
+        "office_devices": [
+          2,
+          6
+        ],
+        "suburb_density": 500.0,
+        "visits_per_customer_year": 1.25,
+        "working_share": {
+          "core": 0.65,
+          "suburb": 0.65,
+          "village": 0.5
+        }
+      },
+      "fleet": {
+        "break_window": [
+          720,
+          750
+        ],
+        "depots": 2,
+        "install_break_offset": 30,
+        "install_share": 0.2,
+        "jobs_per_technician_day": 4.5,
+        "shift": [
+          480,
+          990
+        ],
+        "technicians": 10,
+        "workdays": 220
+      },
+      "jobs": {
+        "correlation": 1.0,
+        "due_classes": {
+          "later": 0.55,
+          "none": 0.2,
+          "overdue": 0.08,
+          "week": 0.17
+        },
+        "extra_jobs_min_service": 0,
+        "extra_jobs_ratio": 0,
+        "install_slots": {
+          "am": [
+            480,
+            780
+          ],
+          "pm": [
+            720,
+            990
+          ]
+        },
+        "max_jobs": 1500,
+        "max_service_minutes": 240,
+        "minutes": {
+          "cleaning": 30,
+          "installation": 240,
+          "repair": 60,
+          "washing": 60
+        },
+        "mix": {
+          "cleaning": 0.55,
+          "installation": 0.1,
+          "repair": 0.1,
+          "washing": 0.25
+        },
+        "office_window": [
+          480,
+          960
+        ],
+        "per_device": true,
+        "second_window_share": 0.1,
+        "slot_preference": {
+          "business": {
+            "am2": 0.1,
+            "office": 0.8,
+            "pm1": 0.1
+          },
+          "home": {
+            "am1": 0.15,
+            "am2": 0.25,
+            "any": 0.3,
+            "pm1": 0.2,
+            "pm2": 0.1
+          },
+          "working": {
+            "am1": 0.45,
+            "am2": 0.05,
+            "any": 0.1,
+            "pm1": 0.05,
+            "pm2": 0.35
+          }
+        },
+        "slots": {
+          "am1": [
+            480,
+            600
+          ],
+          "am2": [
+            600,
+            720
+          ],
+          "pm1": [
+            720,
+            840
+          ],
+          "pm2": [
+            840,
+            960
+          ]
+        },
+        "window_share": 0.6
+      },
+      "matrix": {
+        "haversine_detour": 1.3,
+        "haversine_kmh": 35.0,
+        "max_resample": 5,
+        "max_snap_m": 250.0,
+        "source": "osrm"
+      },
+      "reference_plan": {
+        "fill": 0.92,
+        "neighbourhood": 40
+      },
+      "region": {
+        "center": [
+          46.0727,
+          18.2323
+        ],
+        "city_radius_km": 6.0,
+        "city_share": 0.65,
+        "outer_radius_km": 30.0,
+        "population_cells": "cells-pecs.csv"
+      },
+      "value": {
+        "eur_per_service_hour": {
+          "cleaning": 90,
+          "installation": 75,
+          "repair": 110,
+          "washing": 75
+        },
+        "model": "every_job",
+        "round_to_eur": 5,
+        "spread": 0.25
+      }
+    },
+    "population": {
+      "name": "Eurostat Census 2021 population grid, 1 km, version 3",
+      "url": "https://gisco-services.ec.europa.eu/census/2021/Eurostat_Census-GRID_2021_V3.zip",
+      "sha256": "18a467e3d96b71dd89f0440cc184751bded45721cdff8ba778ece79d7a4f5843",
+      "use": "customer locations are drawn in proportion to the population of the grid cells"
+    },
+    "routing": {
+      "engine": "OSRM",
+      "osm_extract": "hungary-latest.osm.pbf",
+      "osm_extract_date": "2023-05-01",
+      "osrm_version": "5.27.1",
+      "osrm_profile": "car"
+    }
+  }
+}

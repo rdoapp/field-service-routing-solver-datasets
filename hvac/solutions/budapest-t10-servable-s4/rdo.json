@@ -1,0 +1,38 @@
+{
+  "format": "hvac-field-service-solution",
+  "format_version": "1.0",
+  "instance": "budapest-t10-servable-s4",
+  "solution": "rdo",
+  "routes": [
+    {"team": "team01", "stops": [{"job": "j0055", "start": 492}, {"job": "j0040", "start": 780}, {"job": "j0050", "start": 816}, {"job": "j0028", "start": 880}, {"job": "j0032", "start": 916}]},
+    {"team": "team02", "stops": [{"job": "j0035", "start": 488}, {"job": "j0034", "start": 550}, {"job": "j0054", "start": 611}, {"job": "j0068", "start": 646}, {"job": "j0041", "start": 750}, {"job": "j0014", "start": 783}, {"job": "j0026", "start": 819}, {"job": "j0019", "start": 855}]},
+    {"team": "team03", "stops": [{"job": "j0016", "start": 503}, {"job": "j0005", "start": 538}, {"job": "j0001", "start": 569}, {"job": "j0011", "start": 600}, {"job": "j0008", "start": 665}, {"job": "j0017", "start": 750}, {"job": "j0033", "start": 872}, {"job": "j0053", "start": 905}]},
+    {"team": "team04", "stops": [{"job": "j0047", "start": 496}, {"job": "j0024", "start": 529}, {"job": "j0018", "start": 593}, {"job": "j0025", "start": 654}, {"job": "j0044", "start": 685}, {"job": "j0046", "start": 840}, {"job": "j0061", "start": 875}]},
+    {"team": "team05", "stops": [{"job": "j0007", "start": 497}, {"job": "j0022", "start": 589}, {"job": "j0067", "start": 651}, {"job": "j0042", "start": 750}, {"job": "j0065", "start": 811}, {"job": "j0030", "start": 846}, {"job": "j0066", "start": 911}]},
+    {"team": "team06", "stops": [{"job": "j0058", "start": 486}, {"job": "j0031", "start": 523}, {"job": "j0059", "start": 557}, {"job": "j0064", "start": 591}, {"job": "j0015", "start": 624}, {"job": "j0004", "start": 685}, {"job": "j0020", "start": 750}, {"job": "j0013", "start": 842}, {"job": "j0048", "start": 905}]},
+    {"team": "team07", "stops": [{"job": "j0023", "start": 501}, {"job": "j0021", "start": 564}, {"job": "j0063", "start": 659}, {"job": "j0051", "start": 757}, {"job": "j0037", "start": 821}, {"job": "j0036", "start": 883}, {"job": "j0045", "start": 945}]},
+    {"team": "team08", "stops": [{"job": "j0039", "start": 495}, {"job": "j0029", "start": 526}, {"job": "j0052", "start": 588}, {"job": "j0027", "start": 623}, {"job": "j0060", "start": 684}, {"job": "j0056", "start": 750}, {"job": "j0049", "start": 811}, {"job": "j0057", "start": 873}, {"job": "j0043", "start": 939}]},
+    {"team": "team09", "stops": [{"job": "j0010", "start": 495}, {"job": "j0062", "start": 564}, {"job": "j0003", "start": 597}, {"job": "j0038", "start": 658}, {"job": "j0009", "start": 750}, {"job": "j0012", "start": 781}, {"job": "j0002", "start": 842}, {"job": "j0006", "start": 903}]}
+  ],
+  "objective": {
+    "service_minutes": 3480,
+    "priority3_service_minutes": 60,
+    "travel_time_s": 24960,
+    "travel_distance_m": 224933,
+    "jobs_served": 68
+  },
+  "provenance": {
+    "solver": {
+      "name": "RDO day planner",
+      "version": "git-70ad5f72ac92",
+      "commit": "70ad5f72ac92592cbb32904cc827c3de270a538e"
+    },
+    "iteration_budget": 200000,
+    "random_seed": 16472167489083799965,
+    "fixed_clock": "2026-06-15T12:00:00Z",
+    "date": "2026-11-10",
+    "wall_time_s": 130.4,
+    "invocation_sha256": "cd1cd96f42a672513dcc3492f818d89d93b4af1efad75b5fb3722ef497e30f93",
+    "note": null
+  }
+}

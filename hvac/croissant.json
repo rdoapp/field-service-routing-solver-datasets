@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "dct": "http://purl.org/dc/terms/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "samplingRate": "cr:samplingRate",
+    "equivalentProperty": "cr:equivalentProperty"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "hvac-field-service-days",
+  "description": "Synthetic one-day planning problems of an HVAC field-service company in Budapest and Pécs: technicians and two-person teams with shifts, breaks and skills, a queue of cleaning, washing, installation and repair jobs with time windows, priorities and descriptive values in euro, and road travel matrices; a lexicographic objective (service minutes, priority-3 service minutes, travel time); upper bounds; best known solutions; a standalone validator and scorer.",
+  "version": "1.1.0",
+  "license": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "url": "https://doi.org/10.0000/PENDING",
+  "citeAs": "See CITATION.cff (DOI pending).",
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "PENDING: creator to be named by the owner"
+  },
+  "keywords": ["vehicle routing", "field service", "VRPTW", "team orienteering", "time windows", "skills", "synthetic data", "benchmark", "HVAC", "OpenStreetMap"],
+  "isLiveDataset": false,
+  "distribution": [
+    {"@type": "cr:FileObject", "@id": "README.md", "name": "README.md", "description": "overview and instance table", "contentUrl": "README.md", "encodingFormat": "text/markdown", "sha256": "37224f2d377027537cf240549ffc55229ff06669a06fea050cb11c83eb003570"},
+    {"@type": "cr:FileObject", "@id": "PROBLEM.md", "name": "PROBLEM.md", "description": "formal problem definition", "contentUrl": "PROBLEM.md", "encodingFormat": "text/markdown", "sha256": "080ff049ae85c43a9e6f1ce51b1b4c65e5c35d496216b4b7e6713b7cd6d90757"},
+    {"@type": "cr:FileObject", "@id": "FORMAT.md", "name": "FORMAT.md", "description": "file formats", "contentUrl": "FORMAT.md", "encodingFormat": "text/markdown", "sha256": "75bf3ca1adbf8b68701dba8190b7dff06e9b91072673240ca809b9e4b7d2a066"},
+    {"@type": "cr:FileObject", "@id": "instances.csv", "name": "instances.csv", "description": "one row per instance", "contentUrl": "instances.csv", "encodingFormat": "text/csv", "sha256": "d5e184c19918b610e69c047bd6fb285077167d1ba6ab122bf92cebb482f3fb27"},
+    {"@type": "cr:FileObject", "@id": "solutions/index.csv", "name": "solutions/index.csv", "description": "one row per published solution", "contentUrl": "solutions/index.csv", "encodingFormat": "text/csv", "sha256": "ef8e86bea02e610baa61d1607e63133a14e2479644fc629eb39f364371d41f25"},
+    {"@type": "cr:FileSet", "@id": "problems", "name": "problems", "description": "problem.json per instance", "encodingFormat": "application/json", "includes": "problems/*/problem.json"},
+    {"@type": "cr:FileSet", "@id": "matrices", "name": "matrices", "description": "durations (s) and distances (m), n x n, gzipped CSV", "encodingFormat": "application/gzip", "includes": "problems/*/*.csv.gz"},
+    {"@type": "cr:FileSet", "@id": "solutions", "name": "solutions", "description": "best known solutions", "encodingFormat": "application/json", "includes": "solutions/*/*.json"}
+  ],
+  "recordSet": [
+    {"@type": "cr:RecordSet", "@id": "instances", "name": "instances", "description": "the instance table (instances.csv)", "key": {"@id": "instances/instance"}, "field": [{"@type": "cr:Field", "@id": "instances/instance", "name": "instance", "description": "instance id: <region>-t<technicians>-<kind>-s<seed>", "dataType": "sc:Text", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "instance"}}}, {"@type": "cr:Field", "@id": "instances/region", "name": "region", "description": "city the day is set in", "dataType": "sc:Text", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "region"}}}, {"@type": "cr:Field", "@id": "instances/kind", "name": "kind", "description": "full (queue far beyond capacity) or servable (one known plan serves every job)", "dataType": "sc:Text", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "kind"}}}, {"@type": "cr:Field", "@id": "instances/technicians", "name": "technicians", "description": "technicians", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "technicians"}}}, {"@type": "cr:Field", "@id": "instances/teams", "name": "teams", "description": "teams (routes)", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "teams"}}}, {"@type": "cr:Field", "@id": "instances/jobs", "name": "jobs", "description": "jobs in the queue", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "jobs"}}}, {"@type": "cr:Field", "@id": "instances/locations", "name": "locations", "description": "matrix size n", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "locations"}}}, {"@type": "cr:Field", "@id": "instances/queue_service_minutes", "name": "queue_service_minutes", "description": "service minutes of all jobs", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "queue_service_minutes"}}}, {"@type": "cr:Field", "@id": "instances/fleet_team_minutes", "name": "fleet_team_minutes", "description": "per team: shift less breaks, summed", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "fleet_team_minutes"}}}, {"@type": "cr:Field", "@id": "instances/bound_service_minutes", "name": "bound_service_minutes", "description": "upper bound on served service minutes", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "bound_service_minutes"}}}, {"@type": "cr:Field", "@id": "instances/bound_priority3_service_minutes", "name": "bound_priority3_service_minutes", "description": "upper bound on served priority-3 service minutes", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "bound_priority3_service_minutes"}}}, {"@type": "cr:Field", "@id": "instances/best_solution", "name": "best_solution", "description": "id of the best known solution, empty when none", "dataType": "sc:Text", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "best_solution"}}}, {"@type": "cr:Field", "@id": "instances/best_service_minutes", "name": "best_service_minutes", "description": "objective tier 1 of the best known solution", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "best_service_minutes"}}}, {"@type": "cr:Field", "@id": "instances/best_priority3_service_minutes", "name": "best_priority3_service_minutes", "description": "objective tier 2 of the best known solution", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "best_priority3_service_minutes"}}}, {"@type": "cr:Field", "@id": "instances/best_travel_time_s", "name": "best_travel_time_s", "description": "objective tier 3 of the best known solution", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "instances.csv"}, "extract": {"column": "best_travel_time_s"}}}]},
+    {"@type": "cr:RecordSet", "@id": "solution_index", "name": "solution_index", "description": "the published solutions and their objective values (solutions/index.csv)", "field": [{"@type": "cr:Field", "@id": "solution_index/instance", "name": "instance", "description": "instance id", "dataType": "sc:Text", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "instance"}}}, {"@type": "cr:Field", "@id": "solution_index/solution", "name": "solution", "description": "solution id", "dataType": "sc:Text", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "solution"}}}, {"@type": "cr:Field", "@id": "solution_index/service_minutes", "name": "service_minutes", "description": "objective tier 1", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "service_minutes"}}}, {"@type": "cr:Field", "@id": "solution_index/priority3_service_minutes", "name": "priority3_service_minutes", "description": "objective tier 2", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "priority3_service_minutes"}}}, {"@type": "cr:Field", "@id": "solution_index/travel_time_s", "name": "travel_time_s", "description": "objective tier 3", "dataType": "sc:Integer", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "travel_time_s"}}}, {"@type": "cr:Field", "@id": "solution_index/solver", "name": "solver", "description": "solver name", "dataType": "sc:Text", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "solver"}}}, {"@type": "cr:Field", "@id": "solution_index/solver_version", "name": "solver_version", "description": "solver version label", "dataType": "sc:Text", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "solver_version"}}}, {"@type": "cr:Field", "@id": "solution_index/date", "name": "date", "description": "date the solution was produced", "dataType": "sc:Date", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "date"}}}, {"@type": "cr:Field", "@id": "solution_index/best_known", "name": "best_known", "description": "true for the instance's best known solution (objective order; among equals the first solution id)", "dataType": "sc:Boolean", "source": {"fileObject": {"@id": "solutions/index.csv"}, "extract": {"column": "best_known"}}}]}
+  ],
+  "datePublished": "2026-11-10"
+}

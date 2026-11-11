@@ -1,0 +1,33 @@
+{
+  "format": "hvac-field-service-solution",
+  "format_version": "1.0",
+  "instance": "budapest-t05-full-s5",
+  "solution": "rdo",
+  "routes": [
+    {"team": "team01", "stops": [{"job": "j0268", "start": 495}, {"job": "j0108", "start": 529}, {"job": "j0194", "start": 591}, {"job": "j0242", "start": 659}, {"job": "j0238", "start": 690}, {"job": "j0191", "start": 786}, {"job": "j0301", "start": 852}, {"job": "j0310", "start": 921}]},
+    {"team": "team02", "stops": [{"job": "j0123", "start": 515}, {"job": "j0260", "start": 583}, {"job": "j0152", "start": 614}, {"job": "j0414", "start": 657}, {"job": "j0235", "start": 750}, {"job": "j0448", "start": 782}, {"job": "j0269", "start": 840}]},
+    {"team": "team03", "stops": [{"job": "j0419", "start": 491}, {"job": "j0097", "start": 538}, {"job": "j0316", "start": 602}, {"job": "j0362", "start": 664}, {"job": "j0323", "start": 750}, {"job": "j0219", "start": 784}, {"job": "j0296", "start": 840}]},
+    {"team": "team04", "stops": [{"job": "j0404", "start": 490}, {"job": "j0384", "start": 554}, {"job": "j0221", "start": 591}, {"job": "j0424", "start": 658}, {"job": "j0154", "start": 753}, {"job": "j0369", "start": 814}, {"job": "j0345", "start": 851}, {"job": "j0124", "start": 918}]}
+  ],
+  "objective": {
+    "service_minutes": 1530,
+    "priority3_service_minutes": 720,
+    "travel_time_s": 16440,
+    "travel_distance_m": 157069,
+    "jobs_served": 30
+  },
+  "provenance": {
+    "solver": {
+      "name": "RDO day planner",
+      "version": "git-70ad5f72ac92",
+      "commit": "70ad5f72ac92592cbb32904cc827c3de270a538e"
+    },
+    "iteration_budget": 200000,
+    "random_seed": 1193568114510099094,
+    "fixed_clock": "2026-06-15T12:00:00Z",
+    "date": "2026-11-10",
+    "wall_time_s": 39.9,
+    "invocation_sha256": "bce1cdbd50d622b790986ff1383276518823011b422c3ed8165aede16b87635b",
+    "note": null
+  }
+}
